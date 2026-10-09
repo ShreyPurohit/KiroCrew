@@ -241,9 +241,13 @@ PR; it is marked blocked on that below.
   `invalid`-classified URL entry is dropped and does not reach the config; a host
   with no installed Powers adds no source; the phase's security design covers
   stdio `command` entries (not only URLs).
-  _Blocked on:_ the URL validator and remote-URL registration prototyped in the
-  now-closed #14169 landing through a separate PR or being explicitly included
-  in the implementation PR (not on `main` today; no currently open PR identified).
+  _Blocked on:_ (1) the URL validator and remote-URL registration prototyped in
+  the now-closed #14169 landing through a separate PR or being explicitly
+  included in the implementation PR (not on `main` today; no currently open PR
+  identified); and (2) a recorded maintainer decision on Open Question 3
+  (digest-bound consent, sealing or otherwise protecting the installed-Powers
+  tree, or explicitly accepting and documenting the risk) before Phase 1
+  enablement ships.
 - **Phase 2 — Load skills for enabled Powers.** An enabled Power's `skills/`
   attaches as a namespaced skill root through the existing enumerators.
   _Exit criteria:_ a skill from an enabled Power is discoverable by the
